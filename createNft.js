@@ -1,4 +1,3 @@
-console.clear();
 require("dotenv").config();
 const {
   AccountId,
@@ -55,7 +54,7 @@ async function main() {
   console.log(`- Created NFT with Token ID: ${tokenId} \n`);
 
   //IPFS content identifiers for which we will create a NFT
-  CID = ["QmTzWcVfk88JRqjTpVwHzBeULRTNzHY7mnBSG42CpwHmPa"];
+  CID = "ipfs://QmTzWcVfk88JRqjTpVwHzBeULRTNzHY7mnBSG42CpwHmPa";
 
   // Mint new NFT
   let mintTx = await new TokenMintTransaction()
